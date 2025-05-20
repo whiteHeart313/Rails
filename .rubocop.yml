@@ -1,0 +1,45 @@
+# Omakase Ruby styling for Rails
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+
+# Overwrite or add rules to create your own house style
+#
+# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
+# Layout/SpaceInsideArrayLiteralBrackets:
+#   Enabled: false
+
+# .rubocop.yml
+
+# Specify the Ruby version
+AllCops:
+  TargetRubyVersion: 3.1  # Change to your Ruby version
+
+# General settings
+Layout:
+  LineLength: 120  # Maximum line length
+  Enabled: true
+
+# Enable or disable specific cops
+Metrics:
+  Enabled: true
+  AbcSize:
+    Enabled: true
+    Max: 15  # Maximum ABC size for methods
+  MethodLength:
+    Enabled: true
+    Max: 10  # Maximum number of lines in a method
+
+Style:
+  Documentation:
+    Enabled: true  # Require documentation for public methods
+  EmptyLinesAroundMethodBody:
+    Enabled: true  # Enforce empty lines around method bodies
+
+Lint:
+  UnusedMethodArgument:
+    Enabled: true  # Warn about unused method arguments
+
+# Exclude specific files or directories
+Exclude:
+  - 'db/schema.rb'
+  - 'bin/*'
+  - 'node_modules/**'

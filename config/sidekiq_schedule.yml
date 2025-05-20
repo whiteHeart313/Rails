@@ -1,0 +1,4 @@
+post_deletion_scheduler:
+  cron: '*/30 * * * *'  # Run every 30 minutes
+  class: PostDeletionSchedulerWorker
+  queue: default

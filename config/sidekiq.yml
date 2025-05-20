@@ -1,0 +1,7 @@
+# this concurrency can vary based on your server's capabilities and the workload
+# concuming 5 Threads at a time , may be too much for some servers
+:concurrency: 5
+:queues:
+  - default
+  - [critical, 2]
+  - low
