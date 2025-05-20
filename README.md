@@ -23,4 +23,5 @@ If this is your first time running the project, run:
 
 The application and all dependencies will be started automatically in Docker containers.
 
+- Note : due to some space issue with my machine i couldnot test the docker container version of this project, the first attempt of using sqlite with local setup goes well. 
 ---
