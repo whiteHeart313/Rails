@@ -1,24 +1,26 @@
-# README
+# Blog Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails application for blogging. Below you'll find instructions for setup, configuration, and usage.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- **Docker** and **Docker Compose** installed
 
-* System dependencies
+## Setup & Running
 
-* Configuration
+1. **Clone the repository:**
+   ```sh
+   git clone <git@github.com:whiteHeart313/Rails.git>
+   cd Rails
+   ```
 
-* Database creation
+2. **Start the application:**
+If this is your first time running the project, run:
+   ```sh
+   docker-compose build
+   docker-compose up
+   ```
 
-* Database initialization
+The application and all dependencies will be started automatically in Docker containers.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+---
